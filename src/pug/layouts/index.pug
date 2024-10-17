@@ -1,15 +1,4 @@
 .wrapper
   include ../components/header
-  aside.dashboard-sidebar
-    a(href="#").logo 
-      span &#9812
-    button.resize(type="button") &#9776
-  main.dashboard-main
-    .welcome
-      h1 Welcome to the Dashboard
-    .content
-      ul.items-list
-        each val, index in Array(15)
-          li(class=`item item-${index + 1}`)
-            span Card #{index + 1}
+  
   include ../components/footer
